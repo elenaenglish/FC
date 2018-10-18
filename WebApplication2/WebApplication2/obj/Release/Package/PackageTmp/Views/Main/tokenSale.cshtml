@@ -1,0 +1,64 @@
+﻿@Html.Partial("~/Views/Shared/_Header.cshtml")
+
+  <!-- Header -->
+ <header class="masthead token-sale">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="intro-text">
+                    <div class="intro-heading text-uppercase"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="abstract3">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col mb-5">
+                <h2 class="section-heading text-uppercase mb-5">Forum Cooperative's Token Sale Page</h2>
+                <h3 class="section-subheading text-muted">Contact us for detailed information.</h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="form-wrapper-sm">
+                <form id="contactFormSimple" name="sentMessage" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                    <div class="form-group">
+                        <input class="form-control" id="first_name" name="first_name" type="text" placeholder="First Name *" required="required" data-validation-required-message="Please enter your first name.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" id="last_name" name="last_name" type="text" placeholder="Last Name *" required="required" data-validation-required-message="Please enter your last name.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" id="email" type="email" name="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" id="phone" type="tel" name="phone" placeholder="Your Phone">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="00N4600000DC7Ho">I am an accredited investor:</label>&nbsp;
+                        <input id="00N4600000DC7Ho" name="00N4600000DC7Ho" type="checkbox" value="1" required style="top: 2px; position: relative;">
+
+                    </div>
+
+                    <div class="clearfix"></div>
+                    <div id="success"></div>
+                    <input type=hidden name="oid" value="00D4600000105KD">
+                    <input type=hidden name="retURL" value="http://www.forum.coop">
+                    <div class="text-center">
+                        <button id="sendMessageButton" class="btn btn-primary btn-lg text-uppercase" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+</section>
+
+
+@Html.Partial("~/Views/Shared/_Footer.cshtml")

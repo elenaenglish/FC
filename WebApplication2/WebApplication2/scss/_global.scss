@@ -1,0 +1,255 @@
+// Global styling for this template
+body {
+  overflow-x: hidden;
+  @include body-font;
+  color: $gray-1000;
+}
+
+p {
+  line-height: 1.75;
+  color: $gray-1000;
+}
+
+a {
+  color: $primary;
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+.text-gray-300 {
+  color: $gray-300 !important;
+}
+
+.text-muted {
+   color: $gray-800 !important;
+}
+
+p.text-bigger {
+    font-size:18px;
+}
+
+h1,
+h2 {
+  font-weight: 400;
+  @include heading-font-2;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  @include heading-font-2;
+}
+
+
+
+section {
+  padding: 70px 0;
+  h2.section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  h3.section-subheading {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 40px;
+    text-transform: none;
+    @include serif-font;
+  }
+}
+@media(min-width:768px) {
+  section {
+    padding: 100px 0;
+  }
+}
+
+// Button Styles
+.btn {
+  @include heading-font;
+  font-weight: 700;
+}
+
+.btn-xl {
+  font-size: 18px;
+  padding: 20px 40px;
+}
+
+.btn-primary {
+  background-color: $primary !important;
+  border-color: $primary !important;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: darken($primary, 7.5%) !important;
+    border-color: darken($primary, 7.5%) !important;
+    color: white;
+  }
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
+  }
+}
+
+.btn-border {
+  
+  border-color: $primary !important;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: darken($primary, 7.5%) !important;
+    border-color: darken($primary, 7.5%) !important;
+    color: white;
+  }
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
+  }
+}
+
+.cta-link {
+  color: $white; 
+  display:inline-block; 
+  font-size: 1.2em;
+  padding: 5px 15px;
+  
+  &:active,
+  &:focus,
+  &:hover {
+    color: $gray-100; 
+  }
+}
+
+// Highlight color customization
+::-moz-selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+::selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+
+section.abstract-light {
+  background-image: url('../img/backgrounds/abstract8.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 0 300px;
+  background-attachment: fixed;
+  }
+  
+  
+section.abstract2 {
+  background-image: url('../img/backgrounds/abstract5.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  }
+  
+  section.abstract3 {
+    background-image: url('../img/backgrounds/abstract6.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: cover;
+     background-attachment: fixed;
+  }
+  
+section.dark {
+  background-color:$gray-800;
+  
+  p, div {
+    color: $gray-100;
+  }
+  h2.section-heading {
+  color:$white;
+  }
+}
+
+.home-bordered {
+    max-width:800px; 
+    margin:auto;
+
+    .bordered-col {
+        p.header-num {
+            margin-top: 50px;
+        }
+    }
+}
+.bordered-col {
+   border-right: solid 1px $gray-400;
+   padding: 10px 30px;
+   
+   .main-img {
+       position: absolute; 
+       right:5px; 
+       opacity: 0.2; 
+       height: 150px;
+   }
+}
+
+.bordered-col:hover {
+   background-color:$primary;
+   color:$white;
+}
+
+.side-image {
+    max-width: 400px;
+    width: 100%;
+}
+
+.list-holder {
+      line-height: 200%;
+      
+      i {
+          padding-right: 5px;
+      }    
+}
+
+.header-num {
+      font-weight: 200;
+      font-size: 72px;
+      line-height: 100%;
+      color: $primary;
+          border: solid 1px $primary;
+          width: 100px;
+          border-radius: 50%;
+          padding: 10px;
+          padding-left: 32px;
+          padding-bottom: 14px;
+}
+
+form label {
+ color: $gray-600;
+}
+
+.form-control {  
+    height: calc(3rem + 2px);
+}
+
+.form-wrapper-sm {
+	 max-width:600px; margin:auto;
+}
+
+.modal-backdrop.in {
+	opacity: 0.2;
+}

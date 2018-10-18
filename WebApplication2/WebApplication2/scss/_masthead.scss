@@ -1,0 +1,149 @@
+// Styling for the masthead
+header.masthead {
+  text-align: center;
+  color: white;
+  background-image: url('../img/backgrounds/hero-main.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center bottom;
+  background-size: cover;
+  .intro-text {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    .intro-lead-in {
+      font-size: 22px;
+      font-style: italic;
+      line-height: 22px;
+      margin-bottom: 25px;
+      @include serif-font;
+    }
+    .intro-heading {
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 50px;
+      margin-bottom: 25px;      
+      @include heading-font;
+    }
+  }
+}
+header.masthead.partners {  
+  color: white;
+ /* background-image: url('../img/partners.jpg');  */
+   background-image: url('../img/backgrounds/enigma.jpg');    
+   text-align:left;
+   background-position: right top;
+  background-attachment: fixed;
+  
+ .intro-text {
+  	 padding-top: 160px;
+         padding-bottom: 20px;
+      
+       .intro-heading {
+     	 @include heading-font-2;
+      }
+  }
+}
+
+header.masthead.platform {  
+  color: white;
+  /*background-image: url('../img/platform1-bw.jpg');  */
+  background-image: url('../img/backgrounds/enigma3.jpg');    
+  text-align:left;
+  background-position: right top;
+  background-attachment: fixed;
+  
+    .intro-text {
+   	 padding-top: 160px;
+         padding-bottom: 20px;
+      
+      .intro-heading {
+           	 @include heading-font-2;
+      }
+   }
+}
+
+header.masthead.community {  
+  color: $white;
+  background-image: url('../img/backgrounds/enigma4.jpg');  
+  text-align:left;
+  background-position: center center;
+  
+  .intro-text {
+  	 padding-top: 160px;
+         padding-bottom: 20px;
+      
+       .intro-heading {
+           	 @include heading-font-2;
+      }
+   }
+}
+
+header.masthead.academy {  
+  color: $white;
+  background-image: url('../img/backgrounds/forum-academy-bw1.jpg');  
+  text-align:left;
+  background-position: center center;
+   background-attachment: fixed;
+ 
+ .intro-text {
+    padding-top: 160px;
+    padding-bottom: 20px;
+      
+      .intro-heading {
+           	 @include heading-font-2;
+      }
+  }
+}
+
+header.masthead.token-sale {  
+  color: $white;
+  background-image: url('../img/backgrounds/old-computer1-bw.jpg');  
+  text-align:left;
+  background-position: center center;
+   background-attachment: fixed;
+ 
+ .intro-text {
+    padding-top: 160px;
+    padding-bottom: 20px;
+      
+      .intro-heading {
+           	 @include heading-font-2;
+      }
+  }
+}
+
+
+@media(min-width:768px) {
+  header.masthead {
+    .intro-text {
+      padding-top: 200px;
+      padding-bottom: 140px;
+      .intro-lead-in {
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+        margin-bottom: 25px;
+        @include serif-font;
+      }
+      .intro-heading {
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 75px;
+        margin-bottom: 50px;
+        @include heading-font;
+      }
+    }
+  }
+}
+
+.logo-image {max-width:230px;}
+
+.cta-wrapper {
+      background-color: rgba(52, 58, 64, 0.8);
+      max-width: 720px;
+      margin: auto;
+      padding: 20px;
+      margin-top: 40px;
+       
+    border-radius: 7px;
+}

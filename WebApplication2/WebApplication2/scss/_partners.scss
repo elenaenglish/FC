@@ -1,0 +1,32 @@
+
+#partner-list {
+
+.col-md-4 {
+  padding-right:2rem;
+  padding-left:2rem;
+}
+
+
+.entity-image-container {
+    height: 200px;
+    
+    img {
+        max-width: 80%;
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 0;
+   }
+}
+
+.entity-image-container:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+ i.fas {
+   position:relative;
+   top: 1px;
+   }
+
+}
