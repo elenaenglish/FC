@@ -43,6 +43,11 @@ namespace WebApplication2
              "forum-academy",                            // URL with parameters
              new { controller = "Main", action = "ForumAcademy" }  // Parameter defaults
          );
+         routes.MapRoute(
+             "News",                                           // Route name
+             "news",                            // URL with parameters
+             new { controller = "Main", action = "News" }  // Parameter defaults
+         );
 
 
 

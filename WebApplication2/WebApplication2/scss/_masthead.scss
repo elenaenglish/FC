@@ -112,6 +112,22 @@ header.masthead.token-sale {
   }
 }
 
+header.masthead.news {  
+  color: $white;
+  background-image: url('../img/backgrounds/old-computer1-bw.jpg');  
+  text-align:left;
+  background-position: right top;
+   background-attachment: fixed;
+ 
+ .intro-text {
+    padding-top: 160px;
+    padding-bottom: 20px;
+      
+      .intro-heading {
+           	 @include heading-font-2;
+      }
+  }
+}
 
 @media(min-width:768px) {
   header.masthead {

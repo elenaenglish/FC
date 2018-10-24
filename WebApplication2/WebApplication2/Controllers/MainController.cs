@@ -51,6 +51,12 @@ namespace WebApplication2.Controllers
             ViewData["navStyle"] = navStyle;
             return View("ForumAcademy");
         }
+        public ActionResult News()
+        {
+            ViewData["pageTitle"] = "Forum Cooperative : News";
+            ViewData["navStyle"] = navStyle;
+            return View("News");
+        }
     }
    
 }

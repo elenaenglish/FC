@@ -466,6 +466,23 @@ header.masthead.token-sale .intro-text .intro-heading {
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
+header.masthead.news {
+  color: #fff;
+  background-image: url("../img/backgrounds/old-computer1-bw.jpg");
+  text-align: left;
+  background-position: right top;
+  background-attachment: fixed;
+}
+
+header.masthead.news .intro-text {
+  padding-top: 160px;
+  padding-bottom: 20px;
+}
+
+header.masthead.news .intro-text .intro-heading {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
 @media (min-width: 768px) {
   header.masthead .intro-text {
     padding-top: 200px;

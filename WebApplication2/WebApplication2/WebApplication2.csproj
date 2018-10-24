@@ -1766,6 +1766,7 @@
     <Content Include="scss\_team.scss" />
     <Content Include="scss\_timeline.scss" />
     <Content Include="scss\_variables.scss" />
+    <Content Include="Views\Main\news.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
